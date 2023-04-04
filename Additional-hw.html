@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Canvas App</h1>
+<canvas id="Canva" width="750" height="750"></canvas>
+
+<script>
+		var canvas = document.getElementById("Canva");
+
+		var context = canvas.getContext("2d");
+
+		context.fillStyle = "pink";
+
+		context.fillRect(50, 50, 100, 100);
+
+		context.strokeStyle = "green";
+
+		context.beginPath();
+		context.moveTo(50,50);
+		context.lineTo(150,150);
+		context.stroke();
+
+		context.strokeStyle = "blue";
+
+		context.beginPath();
+		context.moveTo(150, 150);
+		context.lineTo(50, 150);
+		context.stroke();
+	</script>
+</body>
+</html>
